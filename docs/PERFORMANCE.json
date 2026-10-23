@@ -1,0 +1,14 @@
+{
+  "environment": "3.12.14",
+  "routes": 2135,
+  "transitions": 8670,
+  "engine_total_ms": 154.77,
+  "engine_mean_us_per_transition": 17.85,
+  "cold_application_start_ms": 142.97,
+  "saved_journeys": 105,
+  "bootstrap_median_ms": 4.76,
+  "bootstrap_max_ms": 5.32,
+  "compact_bootstrap_bytes": 96314,
+  "equivalent_payload_with_histories_bytes": 218451,
+  "payload_reduction_percent": 55.9
+}

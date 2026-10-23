@@ -1,0 +1,130 @@
+"""Optional real-browser checks. Install Playwright and its Chromium browser first."""
+import sys
+from pathlib import Path
+import tempfile
+
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from app import create_app
+from launcher import LocalServer
+from playwright.sync_api import sync_playwright, expect
+
+
+def run():
+    with tempfile.TemporaryDirectory() as folder:
+        server=LocalServer(create_app(Path(folder)/'browser.sqlite3',testing=True),0)
+        try:
+            with sync_playwright() as p:
+                browser=p.chromium.launch(headless=True,args=['--no-sandbox'])
+                context=browser.new_context(viewport={'width':1440,'height':1000},color_scheme='light')
+                page=context.new_page();errors=[]
+                page.on('pageerror',lambda e: errors.append(str(e)))
+                base=f'http://127.0.0.1:{server.port}'
+                page.goto(base)
+                page.locator('.hero h1').click()
+                expect(page.get_by_role('heading',name='One Decision. Infinite Possibilities.')).to_be_visible()
+                page.get_by_role('link',name='Start Exploring').click()
+                expect(page.locator('.card')).to_have_count(12)
+                page.get_by_role('searchbox').fill('The Missing Developer')
+                expect(page.locator('.card')).to_have_count(1)
+                page.get_by_role('searchbox').fill('unfindable')
+                expect(page.locator('.card')).to_have_count(0)
+                page.get_by_role('searchbox').fill('')
+                page.get_by_label('Filter by category').select_option('Survival')
+                expect(page.locator('.card')).to_have_count(11)
+                page.get_by_label('Filter by category').select_option('')
+                page.get_by_label('Sort scenarios').select_option('title')
+                expect(page.locator('.card h3').first).to_have_text('A Door for the Ocean')
+                page.get_by_label('Sort scenarios').select_option('featured')
+                page.locator('.card').first.get_by_role('button',name='Enter scenario').click()
+                expect(page.get_by_role('heading',name='03:17 · Blackout')).to_be_visible()
+                original=page.url.split('#play/')[1]
+                page.get_by_role('button',name='Listen to the old recordings').click()
+                expect(page.get_by_role('heading',name='A voice beneath the static')).to_be_visible()
+                page.get_by_role('button',name='Copy the buried coordinates').click()
+                expect(page.get_by_role('heading',name='The sealed hatch')).to_be_visible()
+                page.get_by_role('button',name='Save a checkpoint').click()
+                expect(page.locator('#toast')).to_contain_text('Checkpoint saved')
+                page.reload()
+                expect(page.get_by_role('heading',name='The sealed hatch')).to_be_visible()
+                page.get_by_role('button',name='Use the coordinates').click()
+                page.get_by_role('button',name='Build a relay').click()
+                expect(page.get_by_role('heading',name='Ending · A signal answered')).to_be_visible()
+                page.get_by_role('button',name='Open Timeline Lab').click()
+                expect(page.locator('.graph')).to_be_visible()
+                page.get_by_role('button',name='Branch before this decision').first.click()
+                expect(page.get_by_role('heading',name='03:17 · Blackout')).to_be_visible()
+                alternate=page.url.split('#play/')[1]
+                assert alternate!=original
+                expect(page.locator('main')).to_contain_text('Original decision:')
+                page.get_by_role('button',name='Go straight to the generator').click()
+                page.get_by_role('button',name='Bridge the breaker').click()
+                expect(page.get_by_role('button',name='Use the coordinates')).to_be_disabled()
+                page.get_by_role('button',name='Climb to the rescue').click()
+                expect(page.get_by_role('button',name='Power the narrowband')).to_be_disabled()
+                page.get_by_role('button',name='Launch the flare').click()
+                expect(page.get_by_role('heading',name='Ending · The long night')).to_be_visible()
+                page.get_by_role('link',name='Compare with original').click()
+                expect(page.locator('.compare .panel')).to_have_count(2)
+                expect(page.locator('.compare')).to_contain_text('A signal answered')
+                expect(page.locator('.compare')).to_contain_text('The long night')
+                page.set_viewport_size({'width':390,'height':844})
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+                page.set_viewport_size({'width':1440,'height':1000})
+                page.get_by_role('button',name='Switch to dark theme').click()
+                page.reload()
+                expect(page.locator('html')).to_have_attribute('data-theme','dark')
+                page.get_by_role('link',name='My Journeys',exact=True).click()
+                try:
+                    expect(page.locator('.journey-row')).to_have_count(2)
+                except Exception:
+                    print(page.locator('main').inner_text())
+                    print('Page errors:',errors)
+                    raise
+                page.locator('.journey-row').filter(has_text='4 decisions').last.locator('summary').click()
+                page.get_by_role('button',name='Restore as new branch').click()
+                expect(page.get_by_role('heading',name='The sealed hatch')).to_be_visible()
+                page.get_by_role('button',name='Show a hint').click()
+                expect(page.locator('#hint')).to_be_visible()
+                page.get_by_role('button',name='Start again',exact=True).click()
+                expect(page.locator('#confirm-dialog')).to_be_visible()
+                page.get_by_role('button',name='Cancel',exact=True).click()
+                expect(page.locator('#confirm-dialog')).not_to_be_visible()
+                page.get_by_role('link',name='Achievements',exact=True).click()
+                expect(page.locator('.achievement:not(.locked)')).to_have_count(5)
+                page.get_by_role('link',name='Settings',exact=True).click()
+                page.get_by_label('Story text').select_option('large')
+                page.get_by_label('Motion',exact=True).select_option('reduce')
+                page.get_by_label('Decision sounds').select_option('on')
+                page.reload()
+                expect(page.locator('html')).to_have_attribute('data-readability','large')
+                expect(page.locator('html')).to_have_attribute('data-motion','reduce')
+                page.get_by_role('button',name='Reset progress',exact=True).click()
+                expect(page.get_by_role('button',name='Confirm',exact=True)).to_be_disabled()
+                page.get_by_label('Type RESET').fill('RESET')
+                page.get_by_role('button',name='Confirm',exact=True).click()
+                expect(page.locator('#toast')).to_contain_text('Progress reset')
+                page.get_by_role('link',name='My Journeys',exact=True).click()
+                expect(page.get_by_role('heading',name='Your first journey is waiting.')).to_be_visible()
+                # Exercise narrow screens, keyboard focus and system reduced motion.
+                mobile=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,has_touch=True,reduced_motion='reduce',color_scheme='dark')
+                phone=mobile.new_page();phone.on('pageerror',lambda e: errors.append(str(e)))
+                phone.goto(base)
+                phone.locator('.hero h1').click()
+                expect(phone.get_by_role('heading',name='One Decision. Infinite Possibilities.')).to_be_visible()
+                assert phone.evaluate('document.documentElement.scrollWidth <= innerWidth')
+                phone.get_by_role('link',name='Start Exploring').click()
+                phone.locator('.card').first.get_by_role('button',name='Enter scenario').click()
+                expect(phone.get_by_role('heading',name='03:17 · Blackout')).to_be_visible()
+                assert phone.evaluate('document.documentElement.scrollWidth <= innerWidth')
+                phone.get_by_role('button',name='Listen to the old recordings').focus()
+                phone.keyboard.press('Enter')
+                expect(phone.get_by_role('heading',name='A voice beneath the static')).to_be_visible()
+                phone.get_by_role('button',name='Open Timeline Lab').click()
+                expect(phone.locator('.graph')).to_be_visible()
+                assert phone.evaluate('document.documentElement.scrollWidth <= innerWidth')
+                assert not errors, errors
+                browser.close()
+                print('Browser checks passed: desktop, mobile, search, filters, endings, fork, comparison, checkpoint, hint, dialog, theme, settings, reset and keyboard. No page errors.')
+        finally:server.stop()
+
+if __name__=='__main__':run()

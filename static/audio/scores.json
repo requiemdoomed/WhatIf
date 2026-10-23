@@ -1,0 +1,79 @@
+{
+  "main": {
+    "title": "Between Possibilities",
+    "seconds": 32,
+    "peak": 0.217198,
+    "rms": 0.052566,
+    "file": "main.wav"
+  },
+  "orbital": {
+    "title": "Distant Habitats",
+    "seconds": 24,
+    "peak": 0.219454,
+    "rms": 0.055221,
+    "file": "orbital.wav"
+  },
+  "tape": {
+    "title": "After the Last Broadcast",
+    "seconds": 24,
+    "peak": 0.212632,
+    "rms": 0.055398,
+    "file": "tape.wav"
+  },
+  "noir": {
+    "title": "An Unfinished Statement",
+    "seconds": 24,
+    "peak": 0.244181,
+    "rms": 0.060315,
+    "file": "noir.wav"
+  },
+  "mystery": {
+    "title": "Under the Familiar",
+    "seconds": 24,
+    "peak": 0.214893,
+    "rms": 0.054392,
+    "file": "mystery.wav"
+  },
+  "neon": {
+    "title": "Rain on Circuit Glass",
+    "seconds": 24,
+    "peak": 0.252332,
+    "rms": 0.059153,
+    "file": "neon.wav"
+  },
+  "city": {
+    "title": "Windows After Sunset",
+    "seconds": 24,
+    "peak": 0.234768,
+    "rms": 0.059168,
+    "file": "city.wav"
+  },
+  "quantum": {
+    "title": "A Second Morning",
+    "seconds": 24,
+    "peak": 0.19958,
+    "rms": 0.051641,
+    "file": "quantum.wav"
+  },
+  "clock": {
+    "title": "The Minute Between",
+    "seconds": 24,
+    "peak": 0.248073,
+    "rms": 0.052851,
+    "file": "clock.wav"
+  },
+  "wilderness": {
+    "title": "Beyond the Shelter",
+    "seconds": 24,
+    "peak": 0.270406,
+    "rms": 0.060691,
+    "file": "wilderness.wav"
+  },
+  "uncanny": {
+    "title": "The Room Remembers",
+    "seconds": 24,
+    "peak": 0.228797,
+    "rms": 0.056256,
+    "file": "uncanny.wav"
+  }
+}

@@ -1,0 +1,3335 @@
+{
+  "scenarios": [
+    {
+      "id": "signal",
+      "title": "The Last Signal",
+      "genre": "Science fiction",
+      "structure": "classic",
+      "audio": "orbital",
+      "sha256": "ca97267a804eeacb178ba88a2d962256c5927c329a72d9b598c3d23c60750857",
+      "scenes": 9,
+      "endings": 3,
+      "routes": 13,
+      "ending_witnesses": {
+        "truth": [
+          "listen",
+          "map",
+          "hatch",
+          "relay"
+        ],
+        "safe": [
+          "listen",
+          "map",
+          "hatch",
+          "withdraw"
+        ],
+        "cost": [
+          "listen",
+          "map",
+          "mast",
+          "flare"
+        ]
+      }
+    },
+    {
+      "id": "developer",
+      "title": "The Missing Developer",
+      "genre": "Technology",
+      "structure": "classic",
+      "audio": "neon",
+      "sha256": "c7f9d1f98001e7baafaa828db6523f04900c061ff8c0712e406e670630c204ca",
+      "scenes": 9,
+      "endings": 3,
+      "routes": 13,
+      "ending_witnesses": {
+        "truth": [
+          "logs",
+          "copy",
+          "verify",
+          "fix"
+        ],
+        "safe": [
+          "logs",
+          "copy",
+          "verify",
+          "pause"
+        ],
+        "cost": [
+          "logs",
+          "copy",
+          "rollback",
+          "bulk"
+        ]
+      }
+    },
+    {
+      "id": "zero",
+      "title": "Zero Hour",
+      "genre": "Survival",
+      "structure": "classic",
+      "audio": "wilderness",
+      "sha256": "4b164bd8356fc86a7d99726741cc44bdc5fbda851fefd3fcb27199ba5ef37c5d",
+      "scenes": 9,
+      "endings": 3,
+      "routes": 13,
+      "ending_witnesses": {
+        "truth": [
+          "hut",
+          "map",
+          "ravine",
+          "cross"
+        ],
+        "safe": [
+          "hut",
+          "map",
+          "ravine",
+          "camp"
+        ],
+        "cost": [
+          "hut",
+          "map",
+          "ridge",
+          "retreat"
+        ]
+      }
+    },
+    {
+      "id": "city",
+      "title": "The Silent City",
+      "genre": "Mystery",
+      "structure": "classic",
+      "audio": "mystery",
+      "sha256": "5cb0b3075b29785ec6c72b583e3520b2b4736f7d409d7e3f53b10d4592505795",
+      "scenes": 9,
+      "endings": 3,
+      "routes": 13,
+      "ending_witnesses": {
+        "truth": [
+          "records",
+          "ticket",
+          "target",
+          "correct"
+        ],
+        "safe": [
+          "records",
+          "ticket",
+          "target",
+          "defer"
+        ],
+        "cost": [
+          "records",
+          "ticket",
+          "restart",
+          "cut"
+        ]
+      }
+    },
+    {
+      "id": "protocol",
+      "title": "The Final Protocol",
+      "genre": "Ethics",
+      "structure": "classic",
+      "audio": "quantum",
+      "sha256": "b6f67413acd7a2421a44e251a0c25ad871eee35e5203a743d72359bf0c39980c",
+      "scenes": 9,
+      "endings": 3,
+      "routes": 13,
+      "ending_witnesses": {
+        "truth": [
+          "record",
+          "diagram",
+          "circuit",
+          "check"
+        ],
+        "safe": [
+          "record",
+          "diagram",
+          "circuit",
+          "exit"
+        ],
+        "cost": [
+          "record",
+          "diagram",
+          "bulk",
+          "flood"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-the-garden-above-europa",
+      "title": "The Garden Above Europa",
+      "genre": "Futuristic",
+      "structure": "investigation",
+      "audio": "orbital",
+      "sha256": "34dd2e145a67da42f71f469bacea45f9cdd9e48aa90832582ab9d5b083992018",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-the-rent-on-sunlight",
+      "title": "The Rent on Sunlight",
+      "genre": "Futuristic",
+      "structure": "negotiation",
+      "audio": "orbital",
+      "sha256": "fa99f4874854f5ac9e7b99a2218121ff67a1ad4368e03fe682e99851fd386257",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-a-door-for-the-ocean",
+      "title": "A Door for the Ocean",
+      "genre": "Futuristic",
+      "structure": "countdown",
+      "audio": "orbital",
+      "sha256": "c45cd02d2f8aeafbe0aaed0e700bd82c1142b93bee668907c3303a171b54d469",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-the-last-human-ticket",
+      "title": "The Last Human Ticket",
+      "genre": "Futuristic",
+      "structure": "investigation",
+      "audio": "orbital",
+      "sha256": "8fc3aeddc56db5f1c316beaa0ccc4bfc4ce3c68f8e18e3fc97918a5e1db9cb87",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-cloud-archive-seven",
+      "title": "Cloud Archive Seven",
+      "genre": "Futuristic",
+      "structure": "negotiation",
+      "audio": "orbital",
+      "sha256": "bf6e91c6c6c8742e1408984aaadd07b02ea5255fbcd738200df03967f8c63789",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-the-gravity-queue",
+      "title": "The Gravity Queue",
+      "genre": "Futuristic",
+      "structure": "countdown",
+      "audio": "orbital",
+      "sha256": "12f99ce3f0001fd7b072a19636eef84edbd22cf2c6db1f130b9b8e284e448bbd",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-museum-of-unlived-lives",
+      "title": "Museum of Unlived Lives",
+      "genre": "Futuristic",
+      "structure": "investigation",
+      "audio": "orbital",
+      "sha256": "e0825671446347171e6c7722a4d310bdc48606a2aa0dd1e3a870eac70e82251d",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-the-comet-funeral",
+      "title": "The Comet Funeral",
+      "genre": "Futuristic",
+      "structure": "negotiation",
+      "audio": "orbital",
+      "sha256": "2ffe88a94e426f8f0d1f85d57ae3b4ae56dd886e3b2c24ca64e2aae2a730851e",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-children-of-the-transit-ring",
+      "title": "Children of the Transit Ring",
+      "genre": "Futuristic",
+      "structure": "countdown",
+      "audio": "orbital",
+      "sha256": "69212f56c4555490aff0bdd6e8a556967f7306f3a438ccc120e5d2c2781d6d45",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "futuristic-the-oxygen-election",
+      "title": "The Oxygen Election",
+      "genre": "Futuristic",
+      "structure": "investigation",
+      "audio": "orbital",
+      "sha256": "1fc75175e2671dd808527030f3db1c32b0ca21f6ab86496cde3775f95b5afe43",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-the-cassette-at-platform-nine",
+      "title": "The Cassette at Platform Nine",
+      "genre": "Retro",
+      "structure": "investigation",
+      "audio": "tape",
+      "sha256": "9b117896edbb20537854242bac76910449ac7941e3f638a9b9763770cac665d1",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-midnight-on-channel-three",
+      "title": "Midnight on Channel Three",
+      "genre": "Retro",
+      "structure": "negotiation",
+      "audio": "tape",
+      "sha256": "22e330d1993333825ce4925612502e0ce2bf725dd9927536fb78aa2bedf47484",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-the-velvet-arcade",
+      "title": "The Velvet Arcade",
+      "genre": "Retro",
+      "structure": "countdown",
+      "audio": "tape",
+      "sha256": "df07a16cb10ffa478b5b08490a4fbe44e708a7b1e99490d7481a25207fe38daa",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-the-photograph-that-waited",
+      "title": "The Photograph That Waited",
+      "genre": "Retro",
+      "structure": "investigation",
+      "audio": "tape",
+      "sha256": "5b55e3e9f5d9e389194bd8e40bb95b6a484f44c5b63b01cc3f0f8583721a5d36",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-dial-m-for-yesterday",
+      "title": "Dial M for Yesterday",
+      "genre": "Retro",
+      "structure": "negotiation",
+      "audio": "tape",
+      "sha256": "046fba168a9fbecbf15f4020dc72245c5887a50f9c0456d1e0d3f288e18fbfb9",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-the-brass-automaton",
+      "title": "The Brass Automaton",
+      "genre": "Retro",
+      "structure": "countdown",
+      "audio": "tape",
+      "sha256": "ab5797ed699dc517db7ce6bdeee01cf600f6157ca9ea98bca7048dd82bd089ac",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-last-orders-at-the-drive-in",
+      "title": "Last Orders at the Drive-In",
+      "genre": "Retro",
+      "structure": "investigation",
+      "audio": "tape",
+      "sha256": "adf66cb95a298c84e97cf27d43577d77f368e79a550af5a4142580b1f74feb7b",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-the-missing-reel",
+      "title": "The Missing Reel",
+      "genre": "Retro",
+      "structure": "negotiation",
+      "audio": "tape",
+      "sha256": "302a757ca4f0fd894208256eea4785a7e9921b0cf702da63078b7d73f1152ba0",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-pager-404",
+      "title": "Pager 404",
+      "genre": "Retro",
+      "structure": "countdown",
+      "audio": "tape",
+      "sha256": "10bbc744db3119a2329c10aeadcef560d9dc19e2ba376b8c760735b748c10477",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "retro-the-last-floppy-disk",
+      "title": "The Last Floppy Disk",
+      "genre": "Retro",
+      "structure": "investigation",
+      "audio": "tape",
+      "sha256": "545932288515f8ae420ccbc994963d8ba4d465ad3c40b391a6af7d46357885cc",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-a-toast-at-blackwater-hall",
+      "title": "A Toast at Blackwater Hall",
+      "genre": "Murder mystery",
+      "structure": "investigation",
+      "audio": "noir",
+      "sha256": "d6fef1f535a58017ccb52ddb0a25cec71f31e04e4aec031fb27b86dfa0cc27f4",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-the-violin-after-midnight",
+      "title": "The Violin After Midnight",
+      "genre": "Murder mystery",
+      "structure": "negotiation",
+      "audio": "noir",
+      "sha256": "f829ea126818ddf2dda271bf0d5cbd2809e8d3eb184d45f656428d9a3befa32b",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-room-614-never-called",
+      "title": "Room 614 Never Called",
+      "genre": "Murder mystery",
+      "structure": "countdown",
+      "audio": "noir",
+      "sha256": "cc7e55ef7acc87a06f038495ba075818fd25e04891f8fd0319be45052deb3fa0",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-the-clockmaker-s-witness",
+      "title": "The Clockmaker's Witness",
+      "genre": "Murder mystery",
+      "structure": "investigation",
+      "audio": "noir",
+      "sha256": "3121df35e545fea290b4a14bcddbb0a6527600de9cbe7164690910c7b70d111e",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-the-body-in-the-bookshop",
+      "title": "The Body in the Bookshop",
+      "genre": "Murder mystery",
+      "structure": "negotiation",
+      "audio": "noir",
+      "sha256": "1b4d09faea06e1f37bd2502ac84ab8984e38b13312e3369917f868063dbb019e",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-snow-on-the-jury-steps",
+      "title": "Snow on the Jury Steps",
+      "genre": "Murder mystery",
+      "structure": "countdown",
+      "audio": "noir",
+      "sha256": "c28d26bf95e2525c7a81972de74cc1d13cb8e681818365064ae79bfa8f6dcd04",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-the-greenhouse-alibi",
+      "title": "The Greenhouse Alibi",
+      "genre": "Murder mystery",
+      "structure": "investigation",
+      "audio": "noir",
+      "sha256": "25e7b37a243b456f36fd9d48563f3d356853fa7df25b32f8a1439b91d61ef932",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-a-murder-between-stations",
+      "title": "A Murder Between Stations",
+      "genre": "Murder mystery",
+      "structure": "negotiation",
+      "audio": "noir",
+      "sha256": "099bcadd0db3173d874632c64d61d6ca811b388a7f0a4e73034dfcb9060161dd",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-the-sculptor-s-last-commission",
+      "title": "The Sculptor's Last Commission",
+      "genre": "Murder mystery",
+      "structure": "countdown",
+      "audio": "noir",
+      "sha256": "619480f9cc3247a771a0494871cbddd7b099c57450ab339bf577c8eb21e66e67",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "murder-the-unsent-invitation",
+      "title": "The Unsent Invitation",
+      "genre": "Murder mystery",
+      "structure": "investigation",
+      "audio": "noir",
+      "sha256": "13e7f13daf2efda413d42157973f15de9b89a167411de00d73967aedec98e687",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-library-of-returned-keys",
+      "title": "The Library of Returned Keys",
+      "genre": "Mystery",
+      "structure": "investigation",
+      "audio": "mystery",
+      "sha256": "cbd42a1d51fc6b599062a1b8b868c6b02dda6785a0b79c09a626f9730357463a",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-lighthouse-without-a-coast",
+      "title": "The Lighthouse Without a Coast",
+      "genre": "Mystery",
+      "structure": "negotiation",
+      "audio": "mystery",
+      "sha256": "7b9dd25fdfdd5d2742e8dd919d707db61009b08f5c4f78f3ead457e52ed23b4a",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-apartment-that-receives-flowers",
+      "title": "The Apartment That Receives Flowers",
+      "genre": "Mystery",
+      "structure": "countdown",
+      "audio": "mystery",
+      "sha256": "a7887e506daba377ac986e85db06acb584a229b09056565a81b3c0374db891d8",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-bell-beneath-the-reservoir",
+      "title": "The Bell Beneath the Reservoir",
+      "genre": "Mystery",
+      "structure": "investigation",
+      "audio": "mystery",
+      "sha256": "d7fec344e44dccb42ae61dfcd729e446d4f8ad1c46ce654cbe1db5af4390980b",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-map-sold-twice",
+      "title": "The Map Sold Twice",
+      "genre": "Mystery",
+      "structure": "negotiation",
+      "audio": "mystery",
+      "sha256": "f6a46feeaebaa3ece5029b3928a4ec4bf06f3566aa8c052ad2cb3fb0e03dfd60",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-letters-to-the-empty-chair",
+      "title": "Letters to the Empty Chair",
+      "genre": "Mystery",
+      "structure": "countdown",
+      "audio": "mystery",
+      "sha256": "c7af828efbd32ae344caa72b9509bccc0389e14cddc50be0a4b97d57e9c7f315",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-hotel-s-thirteenth-breakfast",
+      "title": "The Hotel's Thirteenth Breakfast",
+      "genre": "Mystery",
+      "structure": "investigation",
+      "audio": "mystery",
+      "sha256": "0ce06e779b7ad09e2192a05e9780e108a2b9f779e5d1e02413be3a2afa465aec",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-chalk-door",
+      "title": "The Chalk Door",
+      "genre": "Mystery",
+      "structure": "negotiation",
+      "audio": "mystery",
+      "sha256": "e1ea6b109edb93fe1b749cfcae693174f8bc115146e9cfa52a2d872c4fed6ae7",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-ferry-s-missing-passenger",
+      "title": "The Ferry's Missing Passenger",
+      "genre": "Mystery",
+      "structure": "countdown",
+      "audio": "mystery",
+      "sha256": "9628f44a8245105a3ef71f97ddd4dcd5d2ca955efadc6dd7932e082a4ec60396",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "mystery-the-observatory-s-second-shadow",
+      "title": "The Observatory's Second Shadow",
+      "genre": "Mystery",
+      "structure": "investigation",
+      "audio": "mystery",
+      "sha256": "16bf041461377c9f6cc35200462d38750ea15519fb8204678ea74af608cdd0c2",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-neon-debt",
+      "title": "Neon Debt",
+      "genre": "Cyberpunk",
+      "structure": "investigation",
+      "audio": "neon",
+      "sha256": "370c32d736f466806e7e613c427ba13d70bda7733cfb0e9b80d3b56e72d53f7e",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-the-rain-market",
+      "title": "The Rain Market",
+      "genre": "Cyberpunk",
+      "structure": "negotiation",
+      "audio": "neon",
+      "sha256": "2a2cc7e1bf767bda01a028ef99604e5745118a2f6436a7f02e5ffc374c9c69c4",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-the-choir-of-borrowed-voices",
+      "title": "The Choir of Borrowed Voices",
+      "genre": "Cyberpunk",
+      "structure": "countdown",
+      "audio": "neon",
+      "sha256": "77d8bbf0e9aed0a58f7d847d64a674ac1b34f0ff4321039683bc8b4c54e43512",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-chrome-orchard",
+      "title": "Chrome Orchard",
+      "genre": "Cyberpunk",
+      "structure": "investigation",
+      "audio": "neon",
+      "sha256": "d5c18874f2ec2aaa58f30f00910217290fe69142c7ff1a7ca4468d76e921954f",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-the-night-shift-double",
+      "title": "The Night Shift Double",
+      "genre": "Cyberpunk",
+      "structure": "negotiation",
+      "audio": "neon",
+      "sha256": "53384395b3bd67612119217b71f41aacdf015ec3f325845f6fb197a25526b007",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-glass-skin-district",
+      "title": "Glass Skin District",
+      "genre": "Cyberpunk",
+      "structure": "countdown",
+      "audio": "neon",
+      "sha256": "0fdc4b0402c39955bd7e9e04d86e094ff27ea0a6a13a3106c6c4e8b71a0cef9b",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-the-underpass-embassy",
+      "title": "The Underpass Embassy",
+      "genre": "Cyberpunk",
+      "structure": "investigation",
+      "audio": "neon",
+      "sha256": "2285e96c0ef679fd22877b0b8a94583af91aba8489fa3b347154f27565eadfa9",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-a-ghost-in-the-billboard",
+      "title": "A Ghost in the Billboard",
+      "genre": "Cyberpunk",
+      "structure": "negotiation",
+      "audio": "neon",
+      "sha256": "2e04aaa4c233928f3a6d42dcc02397538ce68ca51f183430a4e2f7f66e2fecbd",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-the-city-that-forgot-cash",
+      "title": "The City That Forgot Cash",
+      "genre": "Cyberpunk",
+      "structure": "countdown",
+      "audio": "neon",
+      "sha256": "e53428e7600c4bb530375fd98b80f618ba2b289948061d30ae80fe8abbabce36",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "cyberpunk-the-sleep-exchange",
+      "title": "The Sleep Exchange",
+      "genre": "Cyberpunk",
+      "structure": "investigation",
+      "audio": "neon",
+      "sha256": "ce11de20d6ea5506d2b4104b79247b66e39e6ef2a24639f80516c013255f1911",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-wedding-on-the-wrong-day",
+      "title": "The Wedding on the Wrong Day",
+      "genre": "Modern life",
+      "structure": "investigation",
+      "audio": "city",
+      "sha256": "2a10ef91d50a9a08b4218af007087667b3187b6bc74f0f4679e11d27413ac3d8",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-scholarship-envelope",
+      "title": "The Scholarship Envelope",
+      "genre": "Modern life",
+      "structure": "negotiation",
+      "audio": "city",
+      "sha256": "574e88902ef3dbac715e2c4a8cb7a7e38b00959df9dae30531f6dfd616d70c22",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-neighbour-s-spare-key",
+      "title": "The Neighbour's Spare Key",
+      "genre": "Modern life",
+      "structure": "countdown",
+      "audio": "city",
+      "sha256": "e85f8eadb94182d3b1a687d9a4885f74be5c6aee8ed86f102a5fd8b39f03d518",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-last-bus-home",
+      "title": "The Last Bus Home",
+      "genre": "Modern life",
+      "structure": "investigation",
+      "audio": "city",
+      "sha256": "9b6b0fa3e34f5895746f3f600ad0272747c6ee24be257229900357ba8ede8a67",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-promotion-nobody-applied-for",
+      "title": "The Promotion Nobody Applied For",
+      "genre": "Modern life",
+      "structure": "negotiation",
+      "audio": "city",
+      "sha256": "31f96cc77fa6884ebbcab6f922f49ea73b67145d63e1b29bfe8252933267e934",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-community-fridge",
+      "title": "The Community Fridge",
+      "genre": "Modern life",
+      "structure": "countdown",
+      "audio": "city",
+      "sha256": "cd0b2ce40d712a2dd0f4ec4d2ae9c18098b6c8ae5539752747473915b08df74e",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-group-project-fork",
+      "title": "The Group Project Fork",
+      "genre": "Modern life",
+      "structure": "investigation",
+      "audio": "city",
+      "sha256": "6a0808b715de976b5d1a40b771fb639271e741aa1141cb80fd0f655faa6be4fc",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-venue-with-two-names",
+      "title": "The Venue with Two Names",
+      "genre": "Modern life",
+      "structure": "negotiation",
+      "audio": "city",
+      "sha256": "be9524bbc5a8f8c010424c48224df065fc29137f3e3d71f2ce673791b7b9280e",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-photo-in-the-family-chat",
+      "title": "The Photo in the Family Chat",
+      "genre": "Modern life",
+      "structure": "countdown",
+      "audio": "city",
+      "sha256": "160453697f9558115f363e57d605789c56a1d136ee26bc59d773ba4cdab261b4",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "modern-the-shop-s-final-weekend",
+      "title": "The Shop's Final Weekend",
+      "genre": "Modern life",
+      "structure": "investigation",
+      "audio": "city",
+      "sha256": "9e1168ab8e547c2c95259dcc2418e36fd8bf943fa8103d0d7e363f9025be29ac",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-other-cup-of-coffee",
+      "title": "The Other Cup of Coffee",
+      "genre": "Quantum",
+      "structure": "investigation",
+      "audio": "quantum",
+      "sha256": "3abb88c62b7a5511a393ceb2201ce48448f8636d3ef2928b3f250934c263c850",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-unmeasured-bridge",
+      "title": "The Unmeasured Bridge",
+      "genre": "Quantum",
+      "structure": "negotiation",
+      "audio": "quantum",
+      "sha256": "4be6c708b57e13aedcad22fe42b919507ba24682dbe3ab1add78c22078bda592",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-witness-in-two-rooms",
+      "title": "The Witness in Two Rooms",
+      "genre": "Quantum",
+      "structure": "countdown",
+      "audio": "quantum",
+      "sha256": "7da8d270826c535e063190899bcfd73b5b3e44814fd680df29508ee95860958d",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-a-message-before-its-sender",
+      "title": "A Message Before Its Sender",
+      "genre": "Quantum",
+      "structure": "investigation",
+      "audio": "quantum",
+      "sha256": "ae1ffc530cf0a79555d28bd28efa8650ccc8409ff18ef0b8f7eedf85be5f585f",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-entangled-heirloom",
+      "title": "The Entangled Heirloom",
+      "genre": "Quantum",
+      "structure": "negotiation",
+      "audio": "quantum",
+      "sha256": "21924ced79428a7bdf59b57ce3a235076d18d15eb174d2ae6dbf69a036c83a0b",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-probability-orchard",
+      "title": "The Probability Orchard",
+      "genre": "Quantum",
+      "structure": "countdown",
+      "audio": "quantum",
+      "sha256": "5b6e44e18173a1d7d8f1112c1cf7d549bc5ddb8bd62428d451b59759249cefd8",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-quiet-half-of-the-experiment",
+      "title": "The Quiet Half of the Experiment",
+      "genre": "Quantum",
+      "structure": "investigation",
+      "audio": "quantum",
+      "sha256": "19dc7dac93fd6010a801f65d40730715e93f3afcca92bf1ea7a2ae8a1c0c844a",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-branch-that-remembered-you",
+      "title": "The Branch That Remembered You",
+      "genre": "Quantum",
+      "structure": "negotiation",
+      "audio": "quantum",
+      "sha256": "7508cd03fe5384bce7c48177d780833730ff49e843a61b6f5d5ad9aed7c0df20",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-tomorrow-s-missing-train",
+      "title": "Tomorrow's Missing Train",
+      "genre": "Quantum",
+      "structure": "countdown",
+      "audio": "quantum",
+      "sha256": "22b6e8b6c3c977e40c8403bae01c90d5e52050e580a4642530a7d8fb8c33c8f0",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "quantum-the-last-observable-star",
+      "title": "The Last Observable Star",
+      "genre": "Quantum",
+      "structure": "investigation",
+      "audio": "quantum",
+      "sha256": "55d97c6990afeaaf2cab69a5b5987a80eb5f3ff1aacb3cb8782a98d5aa0c59c7",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-day-the-river-turned",
+      "title": "The Day the River Turned",
+      "genre": "Time travel",
+      "structure": "investigation",
+      "audio": "clock",
+      "sha256": "a87c47651d043c760c4ce9581ea9c293e8e74811b54cead28f2c19a1f222f3e0",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-a-minute-for-the-astronaut",
+      "title": "A Minute for the Astronaut",
+      "genre": "Time travel",
+      "structure": "negotiation",
+      "audio": "clock",
+      "sha256": "80ca8278c1dac2539f83c528c0c9fa6e579109eeda54f43f0959c4c03e07560a",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-postcard-from-your-old-room",
+      "title": "The Postcard from Your Old Room",
+      "genre": "Time travel",
+      "structure": "countdown",
+      "audio": "clock",
+      "sha256": "ba83dcabaef7d0459f60f40b3a90e05b19dbccec38991eaaacb17f2f751d53ba",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-train-that-skips-summer",
+      "title": "The Train That Skips Summer",
+      "genre": "Time travel",
+      "structure": "investigation",
+      "audio": "clock",
+      "sha256": "6c362432bfee37c413ae5f0061c9e94555c7c86b83c6fa6536d44ee22a5eefc1",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-museum-s-future-wing",
+      "title": "The Museum's Future Wing",
+      "genre": "Time travel",
+      "structure": "negotiation",
+      "audio": "clock",
+      "sha256": "033e5e6a62de92d16f6615da727193733ed1fd3393a1cd6315c864d60464461d",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-yesterday-s-evacuation",
+      "title": "Yesterday's Evacuation",
+      "genre": "Time travel",
+      "structure": "countdown",
+      "audio": "clock",
+      "sha256": "8348dc99953833d7b073fdaac0fbb66412b38b01d06170f12963179fc3741af4",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-repair-shop-at-5-61",
+      "title": "The Repair Shop at 5:61",
+      "genre": "Time travel",
+      "structure": "investigation",
+      "audio": "clock",
+      "sha256": "4d9a16dbb80a90cddca1810b7325d86de983ca61504b2785ed9bc83b5b7ed672",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-borrowed-century",
+      "title": "The Borrowed Century",
+      "genre": "Time travel",
+      "structure": "negotiation",
+      "audio": "clock",
+      "sha256": "ade79b409d7e9b776aa189051124c763ed640c589e61cdb5559c680a36665606",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-last-birthday-loop",
+      "title": "The Last Birthday Loop",
+      "genre": "Time travel",
+      "structure": "countdown",
+      "audio": "clock",
+      "sha256": "361d75c98878bb22ed45818ce026ddc4d86e0f906fd47183edfaf92d1e9e0c78",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "time-the-letter-never-delivered",
+      "title": "The Letter Never Delivered",
+      "genre": "Time travel",
+      "structure": "investigation",
+      "audio": "clock",
+      "sha256": "526a13856d207e0f49b314422e71e13feafd37bf027e2cb8ee3d9d1cf51394c4",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-island-radio",
+      "title": "The Island Radio",
+      "genre": "Survival",
+      "structure": "investigation",
+      "audio": "wilderness",
+      "sha256": "1078f5e2fab549c53f607c17038a5706abd17fe044e7b7807a3d1a5c1c474e26",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-whiteout-ledger",
+      "title": "The Whiteout Ledger",
+      "genre": "Survival",
+      "structure": "negotiation",
+      "audio": "wilderness",
+      "sha256": "8199a2ad15af8df09b05d3d26d6c88bcb6e466f8c639b01587fa4ac58e768b35",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-beneath-the-desert-array",
+      "title": "Beneath the Desert Array",
+      "genre": "Survival",
+      "structure": "countdown",
+      "audio": "wilderness",
+      "sha256": "8a27f6057606235faf0ba8cf34e3079d6f645f2f3de84ba80261a0543f6ce26b",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-ferry-in-the-fog",
+      "title": "The Ferry in the Fog",
+      "genre": "Survival",
+      "structure": "investigation",
+      "audio": "wilderness",
+      "sha256": "cc9224c3115f5444aa25b9e9b39c66c589afefc3ec0798953723e782c52d7181",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-cave-s-second-entrance",
+      "title": "The Cave's Second Entrance",
+      "genre": "Survival",
+      "structure": "negotiation",
+      "audio": "wilderness",
+      "sha256": "77c7f3b3ad807f101cd0800562e742fd3db4e5964f068306fb34c7bb65c786e4",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-ice-road-dispatch",
+      "title": "The Ice Road Dispatch",
+      "genre": "Survival",
+      "structure": "countdown",
+      "audio": "wilderness",
+      "sha256": "46199fa9d64db0928f542050e3a19d0134848904f94a5dc1f71a06bb8522a05e",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-flooded-archive",
+      "title": "The Flooded Archive",
+      "genre": "Survival",
+      "structure": "investigation",
+      "audio": "wilderness",
+      "sha256": "354072c85876fbcdf07d29e21305f281982fdf56b6e7a747778896504bb68d80",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-mountain-clinic",
+      "title": "The Mountain Clinic",
+      "genre": "Survival",
+      "structure": "negotiation",
+      "audio": "wilderness",
+      "sha256": "8236ffa1d5b0c3d85585756633f5fe9c2f2b0e457f033342efe3d64d55f6a65e",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-forest-without-a-signal",
+      "title": "The Forest Without a Signal",
+      "genre": "Survival",
+      "structure": "countdown",
+      "audio": "wilderness",
+      "sha256": "dba58f8dc2532a3e6e97090b81eb385ac38132afd8451d0fa78770e6ec2a469a",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "survival-the-station-under-ash",
+      "title": "The Station Under Ash",
+      "genre": "Survival",
+      "structure": "investigation",
+      "audio": "wilderness",
+      "sha256": "aef03bd35bca267712054848575f254d23f8c838e78d8a97d0fa6c56841cd6c9",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-house-that-keeps-your-name",
+      "title": "The House That Keeps Your Name",
+      "genre": "Uncanny",
+      "structure": "investigation",
+      "audio": "uncanny",
+      "sha256": "44af5a95078c84be015d2f82ea5d7fde2fef678c341084872f19f147ef97a988",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-orchard-of-paper-birds",
+      "title": "The Orchard of Paper Birds",
+      "genre": "Uncanny",
+      "structure": "negotiation",
+      "audio": "uncanny",
+      "sha256": "d5ad3a535b1cf041e50ca69e609b0c97bc20e28fa41201e71e8a84928bf68444",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-train-beneath-the-lake",
+      "title": "The Train Beneath the Lake",
+      "genre": "Uncanny",
+      "structure": "countdown",
+      "audio": "uncanny",
+      "sha256": "8a0bcd42e290eba4ae613d8a8f1b98f420bcc06faafa2b7c3efc8686753d080a",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-shop-of-forgotten-weather",
+      "title": "The Shop of Forgotten Weather",
+      "genre": "Uncanny",
+      "structure": "investigation",
+      "audio": "uncanny",
+      "sha256": "656ef24c0a3dda5f020c1a82cfa1a3c57a45ff613876232f3d8a6e4a075dada1",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-village-with-no-echo",
+      "title": "The Village with No Echo",
+      "genre": "Uncanny",
+      "structure": "negotiation",
+      "audio": "uncanny",
+      "sha256": "c4c88bb3b6cfe7f6e1f671dd4258750bc148d07852eaf7370e4dc38f097e28fd",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-cinema-of-empty-seats",
+      "title": "The Cinema of Empty Seats",
+      "genre": "Uncanny",
+      "structure": "countdown",
+      "audio": "uncanny",
+      "sha256": "8450b2cb7b37f59a3281d90f627d094e757d7035edc93bd364073e691d530378",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-sea-returns-a-desk",
+      "title": "The Sea Returns a Desk",
+      "genre": "Uncanny",
+      "structure": "investigation",
+      "audio": "uncanny",
+      "sha256": "f490d07c5da540c220abf7d1ae98b00a94b50544accf59ced0e9db23183bd65b",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-man-in-every-window",
+      "title": "The Man in Every Window",
+      "genre": "Uncanny",
+      "structure": "negotiation",
+      "audio": "uncanny",
+      "sha256": "bb145bd933a09c3424ef609bf3d01ed270a6881786eb1c8b2944c041e365ff3b",
+      "scenes": 7,
+      "endings": 3,
+      "routes": 20,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "share",
+          "listen",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "share",
+          "listen",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "share",
+          "listen",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-staircase-that-counts-backwards",
+      "title": "The Staircase That Counts Backwards",
+      "genre": "Uncanny",
+      "structure": "countdown",
+      "audio": "uncanny",
+      "sha256": "5039ce1b73ea12de9bfcb4916483f4ad77f00edeb42629b9493f5c404b9de3af",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 25,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    },
+    {
+      "id": "uncanny-the-moon-in-the-reservoir",
+      "title": "The Moon in the Reservoir",
+      "genre": "Uncanny",
+      "structure": "investigation",
+      "audio": "uncanny",
+      "sha256": "994e209010ac1b76e400e7016f819e7598c2747cd51f0c52e92a3e80e9909de6",
+      "scenes": 10,
+      "endings": 3,
+      "routes": 18,
+      "ending_witnesses": {
+        "resolved": [
+          "investigate",
+          "verify",
+          "review",
+          "resolve"
+        ],
+        "contained": [
+          "investigate",
+          "verify",
+          "review",
+          "consult",
+          "contain"
+        ],
+        "fallout": [
+          "investigate",
+          "verify",
+          "shortcut",
+          "risk"
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "scenarios": 105,
+    "scenes": 955,
+    "endings": 315,
+    "routes": 2135
+  }
+}
