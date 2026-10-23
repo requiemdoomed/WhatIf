@@ -4,7 +4,7 @@
 
 Created by **Swayam Shakya**.
 
-WhatIf: Anthology Edition is a local narrative game about revisiting decisions. Enter a fictional world, gather evidence, manage limited resources and follow a route to its ending. Then branch before an earlier choice and compare the two journeys without losing the original.
+WhatIf is a local narrative game about revisiting decisions. Enter a fictional world, gather evidence, manage limited resources and follow a route to its ending. Then branch before an earlier choice and compare the two journeys without losing the original.
 
 ## What is included
 
